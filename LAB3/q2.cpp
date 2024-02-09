@@ -83,7 +83,7 @@ int main(){
     cout<<"The water capapcity in litres is: "<<bottle.getWaterCapacity_L()<< "\n";
     cout<,"After consumption the water in L is: "<<bottle.getupdate_L()<< "\n";
     cout<<"The water capapcity in millilitres is: "<<bottle.getWaterCapacity_mL()<< "\n";
-    cout<,"After consumption the water in mL is: "<<bottle.getupdate_mL()<< "\n";
+    cout<<"After consumption the water in mL is: "<<bottle.getupdate_mL()<< "\n";
 
 
     return 0;
