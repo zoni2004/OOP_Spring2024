@@ -5,6 +5,7 @@ Desc:
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 class boardMaker{
