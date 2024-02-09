@@ -8,7 +8,7 @@ Desc:
 #include <string>
 using namespace std;
 
-class boardMaker{
+class boardMarker{
     string brand;
     string shade;
     bool refillable; //indicating whether it can be refilled or not
@@ -51,6 +51,25 @@ class boardMaker{
         return ink_status;
     }
 
+void inkVerification(){
+        if (getInkStatus() == true){
+            cout<<"Ink is available";
+        }
+        else{
+            cout<<"Ink has run out";
+        }
+    }
+
+    void refillVerification(){
+        if (getrefillable() == true){
+            cout<<"Can be refilled";
+        }
+        else{
+            cout<<"Can not be refilled";
+        }
+    }
+
+
 };
 
 int main(){
@@ -64,10 +83,11 @@ int main(){
     b_d.setInkStatus(false);
 
     //calling getters to output
-    cout<<"The name of the brand is: " <<b_d.setbrand() <<" \n";
-    cout<<"The shade is: " <<b_d.setshade() <<" \n";
-    cout<<"The refillable status is : " <<b_d.setrefillable() <<" \n";
-    cout<<"The ink status is: " <<b_d.setInkStatus() <<" \n";
-
+    cout<<"The name of the brand is: " <<b_d.getbrand() <<" \n";
+    cout<<"The shade is: " <<b_d.getshade() <<" \n";
+    cout<<"The refillable status is : " <<b_d.getrefillable() <<" \n";
+    cout<<"The ink status is: " <<b_d.getInkStatus() <<" \n";
+    b_d.inkVerification();
+    b_d.refillVerification();
     return 0;
 }
